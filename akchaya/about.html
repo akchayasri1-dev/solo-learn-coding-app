@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - SoloLearn</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        /* Blurred background */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -10px;
+            background-image: url(ground.jpeg);
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px) brightness(0.4);
+            z-index: -2;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 20, 0.35);
+            z-index: -1;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00FFFF;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: #FFD700;
+            font-size: 40px;
+            letter-spacing: 3px;
+            margin: 15px 0;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .tagline {
+            color: #00FFFF;
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #00FFFF;
+            font-size: 23px;
+            margin: 22px 0 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        /* Learning topics */
+        .topics {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .topics span {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid #00FFFF;
+            border-radius: 20px;
+            padding: 10px 18px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 15px;
+        }
+
+        /* Button */
+        button {
+            margin: 20px 0;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #FFD700;
+            color: #071b13;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00FFFF;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>ABOUT US</h1>
+
+        <div class="tagline">
+            Learn to Code. Build Your Future.
+        </div>
+
+        <h2>Who We Are</h2>
+
+        <p>
+            SoloLearn is a coding learning platform
+            designed to help beginners and learners
+            develop their programming skills in a
+            simple and interactive way.
+        </p>
+
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to make coding easier
+            and more accessible to everyone by
+            providing a friendly learning experience.
+        </p>
+
+        <h2>What You Can Learn</h2>
+
+        <div class="topics">
+            <span>C Programming</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <h2>Our Features</h2>
+
+        <div class="features">
+            <div class="feature">
+                📘 Beginner-Friendly Lessons
+            </div>
+
+            <div class="feature">
+                💻 Practical Coding Exercises
+            </div>
+
+            <div class="feature">
+                📝 Interactive Quizzes
+            </div>
+
+            <div class="feature">
+                🚀 Learn at Your Own Pace
+            </div>
+
+            <div class="feature">
+                🧠 Improve Problem-Solving Skills
+            </div>
+
+            <div class="feature">
+                🎯 Build Your Coding Knowledge
+            </div>
+        </div>
+
+        <p>
+            Start learning today and turn your
+            ideas into code!
+        </p>
+
+        <button onclick="location.href='index.html'">
+            Back to Home
+        </button>
+        <button onclick="location.href='home.html'">
+            intro page
+        </button>
+        <button onclick="location.href='register.html'">
+            register
+        </button>
+
+    </div>
+
+</body>
+</html>
